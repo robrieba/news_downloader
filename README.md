@@ -6,7 +6,7 @@ the news reports into a Redis list.  The application is idempotent.
 A Redis host, port, password, and database number may be optionally specified.
 
 ```bash
-> $ news_downloader download <source_url> <redis_list> [--redis_host REDIS_HOST
+> $ ruby news_downloader.rb download <source_url> <redis_list> [--redis_host REDIS_HOST
       --redis_port REDIS_PORT --redis_password REDIS_PASSWORD
       --redis_database REDIS_DATABASE]
 
@@ -33,7 +33,7 @@ bundle install
 ## Usage
 
 ```bash
-news_downloader http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts/ NEWS_XML
+ruby news_downloader.rb download http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts/ NEWS_XML
 ```
 
 ## Implementation Details
