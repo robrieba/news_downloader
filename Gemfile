@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'redis'
+gem 'nokogiri'
+gem 'celluloid'
+gem 'celluloid-pmap'
+gem 'zip'
+gem 'thor'
+gem 'ruby-progressbar'
+gem 'paint'
